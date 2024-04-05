@@ -1,0 +1,22 @@
+.{
+    .name = "curl",
+    .version = "0.0.0",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "include",
+        "lib",
+        "src",
+        "README.md",
+    },
+    .dependencies = .{
+        .mbedtls = .{
+            .url = "https://github.com/GetMaestro/mbedtls/archive/8b34f87.tar.gz",
+            .hash = "1220ce6733a6b90960f5298dd221e63538e7d7a8d70fcba69159e27b523ed9c21d83",
+        },
+        .zlib = .{
+            .url = "https://github.com/GetMaestro/zlib/archive/032aea8.tar.gz",
+            .hash = "1220163950936de3726189a876f0a09efb4e0fe47f6823e40e065a4508e81e4b62d7",
+        },
+    },
+}
